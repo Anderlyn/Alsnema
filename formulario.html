@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+
+			<link rel="stylesheet" href="css/formulario.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alsnemas - Agregar Película</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="menuTotal">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="registerAdministrador.html">A. Admin</a></li>
+			<li><a href="calendario.html">Calendario</a></li>
+			<li><a href="javascript:salir()">Salir</a></li>
+		</ul>
+	</div>
+
+	  <span id="menu" onclick="menu()"> <i id="menuImg" class="fa fa-align-justify"></i></span>
+		<p id="titlePagina">Agregar Película</p>
+    <div class="container" id="container">
+			<input type="hidden" name="" value="0" id="actualNum">
+			<button type="button" id="atras" name="button" onclick="formulario(-1)"><i class="fa fa-chevron-left"></i></button>
+			<button type="button" id="adelante" name="button" onclick="formulario(1)"><i class="fa fa-chevron-right"></i></button>
+        <div class="nombre" id="nombreDiv">
+            <p>Ingrese el nombre:</p>
+           <input type="text" id="Nombre" placeholder="Boku no hero: Two Heroes">
+        </div>
+        <div class="duracionMinutos" id="duracionDiv">
+            <p>Ingrese la duracion en minutos:</p>
+            <input type="number" id="duracion" placeholder="240">
+        </div>
+        <div class="genero" id="generoDiv">
+            <p>Ingrese el genero:</p>
+            <input type="text" id="genero" placeholder="Drama, Acción, Harem ...">
+        </div>
+        <div class="idiomaAudio" id="idiomaAudioDiv">
+            <p>Ingrese el idioma del audio:</p>
+          <input type="text" id="idiomaaudio" placeholder="Arabe, Español, Inglés ...">
+        </div>
+        <div class="idiomaSub" id="idiomaSubDiv">
+            <p>Ingrese el idioma de los subtitulos:</p>
+            <input type="text" id="idiomasub" placeholder="Arabe, Español, Inglés ...">
+        </div>
+        <div class="sinopsis" id="sinopsisDiv">
+            <p>Ingrese la sipnopsis:</p>
+            <input type="text" id="sinopsis" placeholder="La historia ronda alrededor de la muete de Kaori">
+        </div>
+        <div class="clasificacion" id="clasificacionDiv">
+            <p>Ingrese la clasificacion:</p>
+							<input type="text" id="clasificacion" placeholder="18+, PG, 15+ ...">
+        </div>
+        <div class="precio" id="precioDiv">
+            <p>Ingrese la precio en colones:</p>
+            <input type="number" id="precio" placeholder="35000, 2000, 17000 ...">
+        </div>
+        <div class="fecha" id="fechaDiv">
+            <p>Ingrese la fecha:</p>
+            <input type="text" id="fecha" placeholder="MM/DD/AAAA">
+        </div>
+        <div class="horaInicio" id="horaInicioDiv">
+            <p>Ingrese la hora de inicio</p>
+            <input type="number" id="hora" placeholder="2, 3, 7 ...">
+        </div>
+        <div class="minutoInicio" id="minutoInicioDiv">
+            <p>Ingrese el minuto de inicio</p>
+            <input type="number" id="minuto" placeholder="30, 12, 47 ...">
+        </div>
+        <div class="imagen" id="imagenDiv">
+            <p>Escoja una imagen:</p>
+            <input type="file" name="file" id="file" class="inputfile" />
+
+        </div>
+        <div class="estado" id="estadoDiv">
+            <p>Escoja el Estado (Escoja entre 1 o 0)</p>
+						<input type="number" id="estado" placeholder= "1 = Activo - 0 = Inactivo">
+        </div>
+
+				<button type="button" name="button" id="botonguardar" onclick="botonguardarclick()">Guardar</button>
+
+    </div>
+		<div class="limits">
+
+		</div>
+		<script type="text/javascript" src="jquery.js">
+
+		</script>
+		<script type="text/javascript" src="formulario.js">
+
+		</script>
+		<script type="text/javascript" src="frontEnd.js">
+
+		</script>
+</body>
+
+</html>

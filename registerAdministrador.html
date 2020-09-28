@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/regAdmin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Alsnemas - Registrar Admin</title>
+  </head>
+  <body>
+    <div id="menuTotal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="formulario.html">A. Película</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="javascript:salir()">Salir</a></li>
+      </ul>
+    </div>
+
+  <span id="menu" onclick="menu()"> <i id="menuImg" class="fa fa-align-justify"></i></span>
+    <div class="container" id="container">
+      <label for="">Nombre:</label>
+      <br>
+      <input type="text" id="nombre" value="">
+      <br>
+      <label for="">Contraseña:</label>
+      <br>
+      <input type="password" id="clave" value="">
+      <br>
+      <label for="">Email:</label>
+      <br>
+      <input type="text" id="email" value="">
+      <br>
+      <label for="">Estado: </label>
+      <br>
+      <input type="number" id="estado" value="">
+      <br>
+      <label for="">Foto: </label>
+      <br>
+      <input type="file" id="file" value="">
+      <br>
+      <button type="button" name="button" id="agregarAdm" onclick="agregarAdmin()">Agregar</button>
+    </div>
+    <div class="breakLine">
+
+    </div>
+  </body>
+  <script type="text/javascript" src="jquery.js">
+
+  </script>
+<script type="text/javascript" src="controllerAdministradorFrontEnd.js">
+</script>
+<script type="text/javascript" src="registrarAdmin.js">
+
+</script>
+</html>

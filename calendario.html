@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    		<script type="text/javascript" src="jquery.js">
+
+          </script>
+    <link rel="stylesheet" href="calendariostyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Alsnemas - Calendario</title>
+    <script type="text/javascript" src="calendariojs.js">
+    </script>
+  </head>
+  <body>
+    <div id="menuTotal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="formulario.html">A. Película</a></li>
+        <li><a href="registerAdministrador.html">A. Admin</a></li>
+        <li><a href="javascript:salir()">Salir</a></li>
+      </ul>
+    </div>
+  <span id="menu" onclick="menu()"> <i id="menuImg" class="fa fa-align-justify"></i></span>
+    <p id="actualYear">2019</p>
+    <p id="titulo">Toca alguna flecha para empezar</p>
+    <div class="botonVer">
+          <button type="button" name="button" id="peliculabtn" onclick="cargarpeliculadelmes()">Películas del Mes</button>
+    </div>
+    <input type="hidden" id="mes" value="1">
+    <div class="containerCalendario">
+      <div class="calendario" id="calendario">
+
+
+      </div>
+    </div>
+    <button type="button" id="atras" name="button" onclick="probar(0)"> ⬅ </button>
+    <button type="button" id="delante" name="button" onclick="probar(1)">  ➡ </button>
+    <div class="saltos">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="jquery.bighover.js"></script>
+  <script type="text/javascript" src="frontEnd.js">
+
+  </script>
+  </body>
+</html>
